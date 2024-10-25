@@ -124,3 +124,6 @@ dmypy.json
 *.whl
 
 .idea/
+
+# version file
+src/func_adl/_version.py
