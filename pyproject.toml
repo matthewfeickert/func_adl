@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
 version_file = "src/func_adl/_version.py"
+local_scheme = "no-local-version"
 
 [tool.isort]
 profile = "black"
