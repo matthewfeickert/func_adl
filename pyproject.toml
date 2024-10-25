@@ -2,46 +2,6 @@
 requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
-[metadata]
-name = "func_adl"
-dynamic = ["version"]
-description = "Functional Analysis Description Language Base Package"
-long_description = "README.md"
-long_description_content_type = "text/markdown"
-url = "https://github.com/iris-hep/func_adl"
-author = "Gordon Watts (IRIS-HEP/UW Seattle)"
-author_email = "gwatts@uw.edu"
-maintainer = "Gordon Watts (IRIS-HEP/UW Seattle)"
-maintainer_email = "gwatts@uw.edu"
-license = "MIT"
-license_files = "LICENSE"
-classifiers =
-    Development Status :: 5 - Production/Stable
-    Intended Audience :: Developers
-    Intended Audience :: Information Technology
-    Programming Language :: Python
-    Programming Language :: Python :: 3.12
-    Programming Language :: Python :: 3.11
-    Programming Language :: Python :: 3.10
-    Programming Language :: Python :: 3.9
-    Programming Language :: Python :: 3.8
-    Programming Language :: Python :: 3.7
-    Topic :: Software Development
-    Topic :: Utilities
-project_urls =
-    Documentation = https://github.com/iris-hep/func_adl
-    Bug Tracker = https://github.com/iris-hep/func_adl/issues
-
-[options]
-packages = find:
-install_requires =
-    make-it-sync
-python_requires = >=3.7
-include_package_data = True
-package_dir =
-    =func_adl
-zip_safe = False
-
 [tool.setuptools_scm]
 version_file = "func_adl/_version.py"
 
