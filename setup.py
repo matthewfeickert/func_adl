@@ -29,23 +29,24 @@ def _guard_python_version(max_python):
 
 _guard_python_version(max_python="3.13")
 
-# extras_require = {
-#     "test": [
-#         "pytest",
-#         "pytest-asyncio",
-#         "pytest-cov",
-#         "flake8",
-#         "coverage",
-#         "twine",
-#         "wheel",
-#         "astunparse",
-#         "black",
-#         "isort",
-#         "numpy",
-#     ]
-# }
-# extras_require["complete"] = sorted(set(sum(extras_require.values(), [])))
+extras_require = {
+    "test": [
+        "pytest",
+        "pytest-asyncio",
+        "pytest-cov",
+        "flake8",
+        "coverage",
+        "twine",
+        "wheel",
+        "astunparse",
+        "black",
+        "isort",
+        "numpy",
+    ]
+}
+extras_require["complete"] = sorted(set(sum(extras_require.values(), [])))
 
 setup(
     packages=["func_adl", "func_adl/ast"],
+    extras_require=extras_require,
 )
